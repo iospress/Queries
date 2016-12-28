@@ -1,11 +1,12 @@
-#+ endpoint: http://ecaickathon-api.tech:3030/default/sparql
+#+ endpoint: http://ecaickathon-api.tech:3030/default/query
 #+ method: GET
 #+ summary: Number of triples per graph
 #+ tags: 
 #+   - metadata 
 
-SELECT ?graph (COUNT(*) AS ?triples) WHERE { 
-	GRAPH ?graph {
-		?s ?p ?o.
-	}
+
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
 }
+LIMIT 25
