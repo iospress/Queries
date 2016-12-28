@@ -1,4 +1,5 @@
-
+#+ endpoint: http://ecaickathon-api.tech:3030/default/sparql
+#+ method: GET
 #+ summary: Number of triples per graph
 #+ tags: 
 #+   - metadata 
